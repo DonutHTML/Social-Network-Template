@@ -1,0 +1,102 @@
+@font-face {
+    font-family: Nasa;
+    src: url("../fonts/nasalization-rg.ttf");
+}
+
+body{
+    background-color: #e1e1e1;
+    font-family: Nasa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav{
+    border-radius: 20px;
+    margin-top: 10px;
+    /* position: fixed;
+    top: 0;
+    z-index: 1; */
+}
+
+.navb-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+}
+
+
+.nav-link{
+    font-size: 20px;
+}
+/* ------------------------------------------------- */
+
+.edit-form{
+    box-shadow: 15px 15px 10px #c4c4c4,
+    -11px -11px 10px #f2f2f2;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+
+
+
+/* media query */
+@media screen and (min-width:576px){
+    .nav{
+        width: 550px;
+    }
+
+    .navbar-list{
+        margin-left: 10%;
+    }
+
+    .main{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:768px){
+    .nav{
+        width: 700px;
+    }
+
+    .navbar-list{
+        margin-left: 14%;
+    }
+
+    .main{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:992px){
+    .nav{
+        width: 800px;
+    }
+
+    .navbar-list{
+        margin-left: 17%;
+    }
+
+    .main{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .nav{
+        width: 900px;
+    }
+
+    .navbar-list{
+        margin-left: 20%;
+    }
+
+    .main{
+        width: 40%;
+    }
+}
+/* ------------------------------------------------- */

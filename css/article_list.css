@@ -1,0 +1,168 @@
+@font-face {
+    font-family: Nasa;
+    src: url("../fonts/nasalization-rg.ttf");
+}
+
+body{
+    background-color: #e1e1e1;
+    font-family: Nasa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav{
+    border-radius: 20px;
+    margin-top: 10px;
+    /* position: fixed;
+    top: 0;
+    z-index: 1; */
+}
+
+.navb-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+}
+
+.nav-link{
+    font-size: 20px;
+}
+/* ------------------------------------------------- */
+
+
+.article{
+    height: 460px;
+    box-shadow: 15px 15px 10px #c4c4c4,
+    -11px -11px 10px #f2f2f2;
+}
+
+.article .article-header{
+ /* border: 1px solid red; */
+
+ height: 75px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.article .article-header div:nth-child(1){
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.article .article-header .img-author img{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.article-content{
+ /* border: 1px solid rgb(12, 233, 16); */
+ height: 310px;
+}
+
+.article-content .img-article img{
+    margin-left: 37px;
+    width: 780px;
+    height: 206px;
+}
+
+.article-content .title-article{
+    margin-top: 10px;
+}
+
+
+.article-footer{
+    height: 65px;
+    display: flex;
+    align-items: center;
+}
+
+.article-footer .btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.article-footer .btns .b1 i{
+    font-size: 30px;
+}
+
+.article-footer .btns .b1 i:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+@media screen and (min-width:576px){
+    .nav{
+        width: 550px;
+    }
+
+    .navbar-list{
+        margin-left: 10%;
+    }
+
+    .main{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:768px){
+    .nav{
+        width: 700px;
+    }
+
+    .navbar-list{
+        margin-left: 14%;
+    }
+
+    .main{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:992px){
+    .nav{
+        width: 800px;
+    }
+
+    .navbar-list{
+        margin-left: 17%;
+    }
+
+    .main{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .nav{
+        width: 900px;
+    }
+
+    .navbar-list{
+        margin-left: 20%;
+    }
+
+    .main{
+        width: 40%;
+    }
+}
+/* ------------------------------------------------- */

@@ -1,0 +1,240 @@
+@font-face {
+    font-family: Nasa;
+    src: url("../fonts/nasalization-rg.ttf");
+}
+
+body{
+    background-color: #e1e1e1;
+    font-family: Nasa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav{
+    border-radius: 20px;
+    margin-top: 10px;
+    /* position: fixed;
+    top: 0;
+    z-index: 1; */
+}
+
+.navb-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+}
+
+
+.nav-link{
+    font-size: 20px;
+}
+/* ------------------------------------------------- */
+
+/* Section Progress Bar */
+
+#progress-bar{
+    --scrollAmount: 0%;
+    background: linear-gradient(to right, #dd8425 var(--scrollAmount), transparent 0);
+    width: 100%;
+    height: 4px;
+    position: fixed;
+    top: 0;
+}
+
+
+/* ------------------------------------------------- */
+
+
+.header-article{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.header-article .img-author img{
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+.header-article .info-author .p1{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: row;
+}
+
+.header-article .info-author .p1 h5{
+    font-size: 25px;
+}
+
+/*  */
+
+article img{
+    width: 100%;
+    height: 100%;
+}
+
+article h1{
+    font-family: "trebuchet MS";
+}
+
+article p{
+    font-size: 18px;
+    font-family: "trebuchet MS";
+    /* text-align: start; */
+}
+
+/*  */
+
+
+.footer-article{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.footer-article i{
+    font-size: 25px;
+}
+
+.footer-article i:hover{
+    cursor: pointer;
+}
+
+.footer-article .tags a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.footer-article .buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.footer-article .buttons .share-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.footer-article .buttons .share-buttons .fa-telegram{
+    color: rgb(107, 107, 238);
+}
+
+.footer-article .buttons .share-buttons .fa-twitter{
+    color: blue;
+}
+
+
+/* Section Style Comment */
+
+.send-comment{
+    box-shadow: 15px 15px 10px #c4c4c4,
+    -11px -11px 10px #f2f2f2;
+    border-radius: 20px;
+}
+
+.send-comment .author-comment{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.send-comment .box-send-comment textarea {
+    border: none;
+    background-color: rgb(194, 194, 194);
+    resize: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.list-comment .comment{
+    box-shadow: 10px 10px 10px #c4c4c4,
+    -4px -4px 10px #f2f2f2;
+    border-radius: 20px;
+}
+
+.list-comment .comment .header-comment{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.list-comment .comment .header-comment .img-author-comment img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.list-comment .comment .content-comment p{
+    text-align: justify;
+}
+
+/* media query */
+@media screen and (min-width:576px){
+    .nav{
+        width: 550px;
+    }
+
+    .navbar-list{
+        margin-left: 10%;
+    }
+
+    .main{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:768px){
+    .nav{
+        width: 700px;
+    }
+
+    .navbar-list{
+        margin-left: 14%;
+    }
+
+    .main{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:992px){
+    .nav{
+        width: 800px;
+    }
+
+    .navbar-list{
+        margin-left: 17%;
+    }
+
+    .main{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .nav{
+        width: 900px;
+    }
+
+    .navbar-list{
+        margin-left: 20%;
+    }
+
+    .main{
+        width: 40%;
+    }
+}
+/* ------------------------------------------------- */

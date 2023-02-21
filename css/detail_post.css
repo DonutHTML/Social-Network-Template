@@ -1,0 +1,218 @@
+@font-face {
+    font-family: Nasa;
+    src: url("../fonts/nasalization-rg.ttf");
+}
+
+body{
+    background-color: #e1e1e1;
+    font-family: Nasa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav{
+    border-radius: 20px;
+    margin-top: 10px;
+    /* position: fixed;
+    top: 0;
+    z-index: 1; */
+}
+
+.navb-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+}
+
+
+.nav-link{
+    font-size: 20px;
+}
+
+/* Style Post */
+
+/* Part Right */
+.header-post{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-post img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.hr{
+
+    width: 100%;
+    border: 1px solid;
+}
+
+.body-post{
+    width: 100%;
+    height: 530px;
+}
+
+.body-post img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Part Left */
+
+.operation-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.operation-buttons i{
+    font-size: 30px;
+}
+
+.operation-buttons i:hover{
+    cursor: pointer;
+
+}
+
+.comments{
+    width: 100%;
+    height: 450px;
+    overflow: auto;
+    /* border-top: 2px solid;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    border-right: 2px solid; */
+    padding: 5px;
+    box-shadow: 8px 8px 7px #c4c4c4,
+    -8px -8px 7px #f2f2f2;
+}
+
+.comment{
+    border-bottom: 1px solid;
+}
+
+.comment-header img{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+/* Customiz Scroll Bar */
+
+/* width */
+.comments::-webkit-scrollbar {
+    width: 7px;
+}
+    
+/* Track */
+.comments::-webkit-scrollbar-track {
+    background: #c6c6c6;
+}
+
+/* Handle */
+.comments::-webkit-scrollbar-thumb {
+    background: rgb(124, 124, 124);
+}
+
+/* Handle on hover */
+.comments::-webkit-scrollbar-thumb:hover {
+  background: rgb(74, 74, 74);
+} 
+
+/* End Customize Scroll Bar */
+
+
+.send-comment form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.send-comment form textarea{
+    resize: none;
+    font-size: 16px;
+    background-color: #d3d3d3;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 12px 10px;
+}
+
+.send-comment form textarea:focus{
+    outline: none !important;
+    border: 3px solid rgb(1, 135, 135);
+}
+
+.send-comment form button{
+    border-radius: 50%;
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.send-comment form button:hover{
+    border: 3px solid rgb(1, 135, 135);
+}
+
+/* media query */
+@media screen and (min-width:576px){
+    .nav{
+        width: 550px;
+    }
+
+    .navbar-list{
+        margin-left: 10%;
+    }
+
+    .main{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:768px){
+    .nav{
+        width: 700px;
+    }
+
+    .navbar-list{
+        margin-left: 14%;
+    }
+
+    .main{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:992px){
+    .nav{
+        width: 800px;
+    }
+
+    .navbar-list{
+        margin-left: 17%;
+    }
+
+    .main{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .nav{
+        width: 900px;
+    }
+
+    .navbar-list{
+        margin-left: 20%;
+    }
+
+    .main{
+        width: 40%;
+    }
+}
